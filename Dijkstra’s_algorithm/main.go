@@ -8,8 +8,8 @@ import (
 type Graph map[string]map[string]int
 
 func Dijkstra(graph Graph, start string) map[string]int {
-	distances := make(map[string]int) // Создаем словарь для хранения расстояний до вершин
-	visited := make(map[string]bool)  // Создаем словарь для отслеживания посещенных вершин
+	distances := make(map[string]int) // Создаем мапу для хранения расстояний до вершин
+	visited := make(map[string]bool)  // Создаем мапу для отслеживания посещенных вершин
 
 	// Инициализируем расстояния до всех вершин как "бесконечность"
 	for vertex := range graph {
